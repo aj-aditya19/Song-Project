@@ -40,6 +40,31 @@ const vibe = {
     name: "Magneta Riddim",
     file: "Music_song_png/Magenta Riddim.mp3",
     image: "Music_song_png/Magneta Riddim.png"
+  },
+  1.3: {
+    name: "Waka Waka",
+    file: "Music_song_png/Waka Waka.mp3",
+    image: "Music_song_png/Waka Waka.png"
+  },
+  1.4: {
+    name: "9:45",
+    file: "Music_song_png/9_45.mp3",
+    image: "Music_song_png/9_45.png"
+  },
+  1.5: {
+    name: "Kolaveri",
+    file: "Music_song_png/Kolaveri.mp3",
+    image: "Music_song_png/Kolaveri.png"
+  },
+  1.6: {
+    name: "Mi Gente",
+    file: "Music_song_png/Mi Gente.mp3",
+    image: "Music_song_png/Mi Gente.png"
+  },
+  1.7: {
+    name: "Despacito",
+    file: "Music_song_png/Despacito.mp3",
+    image: "Music_song_png/Despacito.png"
   }
 };
 const love = {
@@ -54,9 +79,24 @@ const love = {
     image: "Music_song_png/Jeene Laga Hoon.png"
   },
   2.2: {
-    name: "Magneta Riddim",
-    file: "Music_song_png/Magenta Riddim.mp3",
-    image: "Music_song_png/Magneta Riddim.png"
+    name: "Gun Gun Guna",
+    file: "Music_song_png/Gun Gun Guna .mp3",
+    image: "Music_song_png/Gun Gun Guna.png"
+  },
+  2.3: {
+    name: "Kashmir Main Tu Kanyakumari",
+    file: "Music_song_png/Kashmir Main Tu Kanyakumari.mp3",
+    image: "Music_song_png/kashmir Main Tu kanyaKumari.png"
+  },
+  2.4: {
+    name: "Slow Motion Angreza",
+    file: "Music_song_png/Slow Motion Angreza.mp3",
+    image: "Music_song_png/Slow Motion Angreza.png"
+  },
+  2.5: {
+    name: "Laung Da Lashkara",
+    file: "Music_song_png/Laung Da Lashkara.mp3",
+    image: "Music_song_png/Laung Da Lashkara.png"
   }
 };
 const motivation = {
@@ -69,6 +109,15 @@ const motivation = {
     name: "Aam Jahe Munde",
     file: "Music_song_png/Aam Jahe Munde  .mp3",
     image: "Music_song_png/Aam Jahe Munde .png"
+  },
+  3.2: {
+    name: "Bebe Bapu",
+    file: "Music_song_png/Bebe Bapu .mp3",
+  },
+  3.3: {
+    name: "Victory Anthem",
+    file: "Music_song_png/VICTORY Anthem.mp3",
+    image: "Music_song_png/Victory Anthem.png"
   }
 };
 const badass = {
@@ -76,10 +125,74 @@ const badass = {
     name: "Leo-Badass",
     file: "Music_song_png/Leo-Badass.mp3",
     image: "Music_song_png/Leo-Badass.png"
+  },
+  4.1: {
+    name: "Russian Bandana",
+    file: "Music_song_png/Russian Bandana.mp3",
+    image: "Music_song_png/Russain Bandana.png"
+  },
+  4.2: {
+    name: "Baadshah O Baadshah",
+    file: "Music_song_png/Baadshah O Baadshah.mp3",
+    image: "Music_song_png/Baadshah O Baadshah.png"
+  },
+  4.3: {
+    name: "Born to shine",
+    file: "Music_song_png/Born to Shine.mp3",
+    image: "Music_song_png/Born to Shine.png"
+  },
+  4.4: {
+    name: "Go Down Deh",
+    file: "Music_song_png/Go Down Deh.mp3",
+    image: "Music_song_png/Go Down Deh.png"
+  },
+  4.5: {
+    name: "Cheques",
+    file: "Music_song_png/Cheques.mp3",
+    image: "Music_song_png/Cheques.png"
+  }
+};
+const dance = {
+  5.0: {
+    name: "Chikni Chameli",
+    file: "Music_song_png/Chikni Chameli.mp3",
+    image: "Music_song_png/Chikni Chameli.png"
+  },
+  5.1: {
+    name: "Laila Main Laila",
+    file: "Music_song_png/Laila Main Laila.mp3",
+    image: "Music_song_png/Laila Main Laila.png"
+  },
+  5.2: {
+    name: "Badtamez Dil",
+    file: "Music_song_png/Badtameez Dil.mp3",
+    image: "Music_song_pngBadtameez Dil.png"
+  },
+  5.3: {
+    name: "Chamma Chamma",
+    file: "Music_song_png/Chamma Chamma .mp3",
+    image: "Music_song_png/Chamma Chamma.png"
+  },
+  5.4: {
+    name: "Munni Badnaam",
+    file: "Music_song_png/Munni Badnaam.mp3",
+    image: "Music_song_png/Munni Badnaam.png"
+  },
+  5.5: {
+    name: "Sheila Ki Jawani",
+    file: "Music_song_png/Sheila Ki Jawani.mp3",
+    image: "Music_song_png/Sheila Ki Jawani.png"
+  }
+};
+const god = {
+  6.0: {
+    name: "Namo Namo",
+    file: "Music_song_png/Namo Namo.mp3",
+    image: "Music_song_png/Namo Namo.png"
   }
 };
 
-const titles = [ "Vibe" , "Love", "Motivation", "Badass"];
+const titles = [ "Vibe" , "Love", "Motivation", "Badass", "Dance", "God"];
 let titletrack = 0;
 // Step 2: Add audio player dynamically (if not already there)
 let audio = document.createElement("audio");
@@ -103,27 +216,33 @@ function searching_song_by_id(songId , songtitle)
     let songData=null;
     if( songtitle == "Vibe")
     {
-      console.log("on vibe");
       titletrack = 0;
       songData = vibe[songId];
     }
     if( songtitle == "Love")
     {
-      console.log("on love");
       titletrack = 1;
       songData = love[songId];
     }
     if( songtitle == "Motivation")
     {
-      console.log("on motivation");
       titletrack = 2;
       songData = motivation[songId];
     }
     if( songtitle == "Badass")
     {
-      console.log("on badass");
       titletrack = 2;
       songData = badass[songId];
+    }
+    if( songtitle == "Dance")
+    {
+      titletrack = 2;
+      songData = dance[songId];                         //add here
+    }
+    if( songtitle == "God")
+    {
+      titletrack = 2;
+      songData = god[songId];                         //add here
     }
 
     if (songData) {
@@ -146,12 +265,9 @@ function searching_song_by_id(songId , songtitle)
   document.querySelector(".timing").value = audio.currentTime;
   const times = document.querySelector(".timing");
   const timeinint = parseFloat(times.value);
-  console.log("Times : ", times.value);
-  console.log("Times : ", timeinint);
-  console.log("Audio : ", audio.duration);
   let durationofsong = Math.floor(audio.duration);
   durationofsong = parseFloat(durationofsong);
-  console.log("Duration of song : ", durationofsong);
+  console.log("Id of song is : ", songId);
   if(durationofsong==timeinint)
   {
     console.log("the end of the song");
@@ -192,7 +308,7 @@ songBoxes.forEach(song => {
     searching_song_by_id(songId, songtitle);
   });
 });
-const typesofmusic = { vibe, love, motivation};
+const typesofmusic = { vibe, love, motivation, badass, dance, god};         //addtion of when you add new thing is here 
 //pause and play
 pause.addEventListener(("click"), ()=> {
   if( audio.paused)
