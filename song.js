@@ -113,6 +113,7 @@ const motivation = {
   3.2: {
     name: "Bebe Bapu",
     file: "Music_song_png/Bebe Bapu .mp3",
+    image: "Music_song_png/Bebe bapu.png"
   },
   3.3: {
     name: "Victory Anthem",
